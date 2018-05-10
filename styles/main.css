@@ -5,10 +5,13 @@
 * { margin: 0; box-sizing: border-box; } 
 
 body { 
+    padding: 300px;
+    margin-right: auto;
     font-size: 16px; 
     line-height: 32px;
     font-family: /* Ubuntu, sans-serif */;
     color: black;
+    
 }
 
 h1 {
@@ -31,19 +34,19 @@ header, main, footer {
 
 header, footer, footer  {
     text-align: center;
-    background-color: darkblue;
-    color: white;
+    background-color: powderblue;
+    color: brown;
 }
 
 
 
 header img {
     position: absolute;
-    width: 189px;
+    width: 184px;
     height: auto;
     float: right;
-    top: 17px;
-    right: 0px;
+    top: 320px;
+    right: 300px;
 }
 
 footer {
