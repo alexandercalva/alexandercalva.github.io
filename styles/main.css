@@ -2,6 +2,130 @@
 /* You may use #HEX or color names */
 
 /* * is a wildcard referring to all elements. */
+@import url('https://fonts.googleapis.com/css?family=Anton|Cinzel|Kranky|Nixie+One|Open+Sans');
+  #content {
+    background-color: black;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+    .leftcol, .rightcol{
+    max-width: 48%;
+    flex: 1 0 15em;
+   }
+   h1, h2, h3, h4, h5, h6 { 
+    font-family: 'Nixie One', cursive;
+    font-size: 1.85em;
+    line-height: 1.1em;
+    padding: 10px;
+    color: #ad2100;
+     text-align: center;
+  }
+  p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    padding: 10px;
+    color: white;
+  }
+  .pagetitle {
+    font-size: 2.5em;
+    color: #ad2100;
+  }
+  /*Child Page, Rate/Dates */ 
+  .pagetitle2 {
+    font-size: 1.5em;
+    color: white;
+    justify-content: center;
+}
+    nav {
+    background-color: #ad2100;
+    padding: 2.5em; 
+   margin-top: -113px;
+  }
+ nav a {
+   color: #f0f7b3;
+   line-height: 1em; 
+   padding: 1em 1em;
+    text-decoration: none;
+  }
+   nav li {
+    font-family: 'Nixie One', cursive;
+    font-weight: bold;
+    font-size: 1.50em;
+    padding-left: 175px;
+     display: inline-block;
+    list-style-type: none;
+  }  
+ nav a:hover {
+   background-color: #F6FF00;
+    color: #090C9B;
+    border-radius: 5px;
+   box-shadow: 5px 5px 5px black;
+  }
+  nav ul {
+  margin: 0;
+  }
+  #sec1, #sec2, footer { 
+    display: flex; 
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  #sec1 {  
+    color: #0c1d14;
+  }
+  #sec2 {
+    background-color: #f0f7b3;  
+  }
+ /*Child Page, Rate/Dates */ 
+ #sec2a {
+  color: #0c1d14;   
+  display: flex; 
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center; 
+}  
+ #sec3 {
+    text-align: center;
+    color: #0c1d14;
+  }
+  .pspec, .hspec {
+    color: black;
+  } 
+img {
+   max-width: 100%;
+  }
+  #logo {
+    width: 180px;
+    position: relative;
+    left: 10px;
+    top: 10px;
+    border: #333333 2px solid;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px black;
+  }
+  #banner {
+    width: 100%;
+  }
+  #img1, #img2 {
+    width: 450px;
+    height: 300px;
+    margin: 15px 10px 15px 10px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px black;
+  }
+  #info {
+    font-family: 'kranky', cursive;
+    font-size: 16px;  
+    color: white;
+  } 
+  .socialmedia {
+    padding: 15px;
+    float: right;
+  }   
+  .icon {
+    height: 40px; 
+  }
 * { margin: 0; box-sizing: border-box; } 
 
 body { 
