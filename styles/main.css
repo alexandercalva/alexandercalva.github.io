@@ -5,7 +5,9 @@
 
 * {
     margin:auto;
-    padding: 0px ;
+    padding: 0px;
+    width: 90%;
+    
     
 }
     nav {
@@ -68,23 +70,58 @@ header img {
    
     position:absolute;
     width: 215px;
-    right: 0px;
+    right: 210px;
     top: 90px;
     float:right;
     
     
 }
 
-@media screen and (max-width:680px){
+@media screen and (max-width:1105px){
     
     header img{
         position:relative;
-        width:150px;
+        width:220px;
         top: 28px; 
         right:-8px;
     }
     
 }
+
+@media screen and (max-width:832px){
+    
+    header img{
+        position:relative;
+        width:200px;
+        top: 28px; 
+        right:-8px;
+    }
+    
+}
+@media screen and (max-width:520px){
+    
+    header img{
+        position:relative;
+        width:100px;
+        top: 28px; 
+        right:-8px;
+    }
+    
+}
+@media screen and (max-width:360px){
+    
+    header img{
+        position:absolute;
+        width:70px;
+        top: 22px; 
+        right:40px;
+    }
+    h1{
+        text-align: left;
+    }
+}
+
+
 main ul li a {
         text-decoration: none;
 }
