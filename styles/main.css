@@ -12,10 +12,19 @@
     background-color: black;
     
   }
+
  
-  
- 
- 
+ body { 
+    max-width: 100%;
+    padding: 35px;
+    margin: auto;
+    font-size: 16px; 
+    line-height: 32px;
+    font-family:  Ubuntu, sans-serif;
+    color: black;
+    
+    
+}
 
   .icon {
     height: 40px; 
@@ -23,7 +32,7 @@
 
 body { 
     max-width: 100%;
-    padding:200px;
+    
     margin-right: auto;
     font-size: 16px; 
     line-height: 32px;
@@ -37,13 +46,16 @@ h1 {
     font-size: /* x.xrem  (rem is a unit of measure) */;
     background: black;
     color: white;
+    max-width: 100%;
+    
 }
 
 h2 {
     font-size: /* x.xrem */;
-    text-align: center;
+    text-align:center;
     font-family: verdana, sans-serif;
     color:#601700;
+    max-width: 100%;
     
 }
 
@@ -64,11 +76,13 @@ header, footer, footer  {
 
 header img {
     
-    position: absolute;
-    max-width: 14%;
-    right: 200px;
-    top: 287px;
     
+    display:absolute;
+
+    width: 200px;
+    right: 0px;
+    top: 100px;
+    float:right;
     
     
 }
@@ -85,6 +99,7 @@ footer p a {
     font-size: /* smaller */;
    text-decoration: none;
 }
+ 
 
 footer {
      background: linear-gradient(to left, #F3D9DC, black);
