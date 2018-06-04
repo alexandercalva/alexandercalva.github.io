@@ -120,7 +120,18 @@ header img {
         text-align: left;
     }
 }
-
+@media screen and (max-width:320px){
+    
+    header img{
+        display: none;
+        width:70px;
+        top: 22px; 
+        right:40px;
+    }
+    h1{
+        text-align: left;
+    }
+}
 
 main ul li a {
         text-decoration: none;
