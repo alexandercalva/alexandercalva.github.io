@@ -5,10 +5,11 @@
 
 * {
     margin:auto;
-    padding: 0;
+    padding: 0px ;
+    
 }
     nav {
-    background-color: #ad2100;
+    background-color: black;
     
   }
  
@@ -19,54 +20,72 @@
   .icon {
     height: 40px; 
   }
-* { margin: auto; box-sizing: border-box; } 
 
 body { 
     max-width: 100%;
-    padding: 300px;
+    padding:200px;
     margin-right: auto;
     font-size: 16px; 
     line-height: 32px;
-    font-family: /* Ubuntu, sans-serif */;
+    font-family:  Ubuntu, sans-serif;
     color: black;
+    
     
 }
 
 h1 {
     font-size: /* x.xrem  (rem is a unit of measure) */;
-    color: /* #xxxxxx */;
+    background: black;
+    color: white;
 }
 
 h2 {
     font-size: /* x.xrem */;
     text-align: center;
+    font-family: verdana, sans-serif;
+    color:#601700;
     
-    border-bottom: 1px solid #bbb;
 }
 
 header, main, footer {
     margin: 1.25rem auto;
     padding: .5rem;
     max-width: 100%;
+     background: linear-gradient(to right, rgba(25,0,0,0), rgba(25,0,0,1));
 }
 
 header, footer, footer  {
     text-align: center;
-    background-color: powderblue;
-    color: brown;
+    
+    color: white;
 }
 
 
 
 header img {
+    
     position: absolute;
-    width: 184px;
-    height: auto;
-    float: right;
-    top: 320px;
-    right: 300px;
+    max-width: 14%;
+    right: 200px;
+    top: 287px;
+    
+    
+    
+}
+
+main ul li a {
+        text-decoration: none;
+}
+
+main ul li {
+    list-style: none;
+}
+
+footer p a {
+    font-size: /* smaller */;
+   text-decoration: none;
 }
 
 footer {
-    font-size: /* smaller */;
+     background: linear-gradient(to left, #F3D9DC, black);
 }
