@@ -108,30 +108,16 @@ header img {
     }
     
 }
-@media screen and (max-width:360px){
+@media screen and (max-width:373px){
     
     header img{
-        position:absolute;
-        width:70px;
-        top: 22px; 
-        right:40px;
+        display:none;
     }
     h1{
-        text-align: left;
+        text-align: center;
     }
 }
-@media screen and (max-width:320px){
-    
-    header img{
-        display: none;
-        width:70px;
-        top: 22px; 
-        right:40px;
-    }
-    h1{
-        text-align: left;
-    }
-}
+
 
 main ul li a {
         text-decoration: none;
