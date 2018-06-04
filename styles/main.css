@@ -14,33 +14,21 @@
   }
 
  
- body { 
-    max-width: 100%;
-    padding: 35px;
-    margin: auto;
-    font-size: 16px; 
-    line-height: 32px;
-    font-family:  Ubuntu, sans-serif;
-    color: black;
-    
-    
-}
-
+ 
   .icon {
     height: 40px; 
   }
 
 body { 
     max-width: 100%;
-    
-    margin-right: auto;
+    margin: auto;
     font-size: 16px; 
     line-height: 32px;
     font-family:  Ubuntu, sans-serif;
     color: black;
-    
-    
+     
 }
+
 
 h1 {
     font-size: /* x.xrem  (rem is a unit of measure) */;
@@ -77,16 +65,26 @@ header, footer, footer  {
 header img {
     
     
-    display:absolute;
-
-    width: 200px;
+   
+    position:absolute;
+    width: 215px;
     right: 0px;
-    top: 100px;
+    top: 90px;
     float:right;
     
     
 }
 
+@media screen and (max-width:680px){
+    
+    header img{
+        position:relative;
+        width:150px;
+        top: 28px; 
+        right:-8px;
+    }
+    
+}
 main ul li a {
         text-decoration: none;
 }
