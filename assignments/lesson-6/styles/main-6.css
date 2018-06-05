@@ -65,7 +65,7 @@ nav ul li a:hover {
 }
 
 .weather-summary{
-    position: center;
+    position:static;
     width: 45%; 
     
 }
