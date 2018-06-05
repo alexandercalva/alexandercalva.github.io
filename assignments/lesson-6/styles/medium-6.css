@@ -1,22 +1,29 @@
+
 section.forecast { display:none;
 
 }  
 
 @media only screen and (min-width: 560px) {
 
-    
-    nav ul.hide { display: block;}
-    nav button { display:none; }
-     
    
     section.forecast{
         display:block;
     }
 
-    nav ul li a {
-        border: none;
-        border-right: 1px solid rgba(0,0,0,0.3);
+   
+    nav button {
+        clear:both;
+        display:none;
         
     }
+    nav ul{ display:flex;}
+    
+   
+    nav ul li  {
 
+    list-style-type: none;
+    text-decoration: none;
+    color: #000;
+ 
+}
 }

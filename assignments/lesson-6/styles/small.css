@@ -1,7 +1,21 @@
-html{ -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+@media screen and (max-width: 559px){
 
-*{ -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+    
 
+    nav ul.hide {
+        display:block;
+    }
+
+    nav ul li { list-style-type: none;
+    font-size: 1em;
+    }
+    nav ul li a {
+
+    
+    text-decoration:none;
+    color: #000;
+ 
+}
 nav button {
     margin: .2rem 2%;
     background-color: transparent;
@@ -10,26 +24,57 @@ nav button {
     color: #555;
     
 }
+
 nav{
     background-color: #ccc;
     font-family: Verdana, sans-serif;
 }
 
-nav ul {
-    
- list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-nav ul li a {
 
 
-    text-decoration: none;
-    color: #000;
- 
-}
+
 
 nav ul li a:hover { background-color: rgba(0,0,0,0.4);}
 nav ul.hide { display:none;}
 nav ul li.active a{background-color: rgba(0,0,0,0.2); color: #fff;}
+
+#imagen{
+ 
+ width: 100%;
+ float:left;
+}
+
+.town-article{
+    clear:both;
+    font-family: "Forum", cursive;
+    font-size: 1.3em;
+    width: 100%;
+    
+}
+
+header img { 
+    position:absolute;
+    top:30px;
+    left:-20px;
+    width: 25%;
+    float:left;
+
+}
+header h1 {
+    font-family: "Libre Baskerville", serif;
+    font-size: 130%;
+    color:rgba(45, 4, 7,.5);
+    text-align: right;
+    
+    
+    
+       
+}
+
+.weather-summary{
+    position: center;
+    width: 100%; 
+    
+    
+}
+}
