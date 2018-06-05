@@ -2,16 +2,23 @@ section.forecast { display:none;
 
 }  
 
-@media only screen and (min-width: 665px) {
+@media only screen and (min-width: 35em) {
 
     
     
     nav button { display:none;
     
     }  
+    nav ul.hide { display: block;}
+   
     section.forecast{
         display:block;
     }
 
+    nav ul li a {
+        border: none;
+        border-right: 1px solid rgba(0,0,0,0.3);
+        padding: .8rem 1 rem;
+    }
 
 }
