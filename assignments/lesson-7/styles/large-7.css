@@ -1,0 +1,28 @@
+
+@media only screen and (min-width: 64em) {
+ 
+    
+   
+    nav ul {
+        display:flex;
+    }
+    .container1{
+     display: grid;
+	 width: 100%;
+	 grid-template-columns: 1fr 1fr 1fr;
+     column-gap: 1px;
+     grid-row-gap: 1px;
+     padding: 0% 0% 0% 0%;
+	 
+     
+ 
+     } 
+     .container1 img {
+	   width: 100%;
+	   border-radius:12px;
+	   
+	   }		 
+.container1 img:hover {
+        filter: drop-shadow(4px 4px 8px black);
+    }
+}

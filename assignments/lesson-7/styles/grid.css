@@ -1,0 +1,12 @@
+.container {
+ display: grid;
+ width: 50%;
+ margin: 0 auto;
+ 
+ }
+ .large{
+ grid-template-columns: 3fr;
+    
+   
+ 
+ }
