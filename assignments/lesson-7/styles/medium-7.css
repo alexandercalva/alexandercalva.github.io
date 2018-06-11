@@ -2,16 +2,20 @@ section.forecast { display:none;
 
 }  
 
-@media only screen and (min-width: 37.5em) {
+@media only screen and (max-width: 1026px) {
 
-   
-   
+    
     nav button {
         
         display:none;
         
     }
-    nav ul{ display:flex;}
+    nav ul {
+        display:flex;
+        list-style-type: none;
+    }
+   
+
     #picture{
     position: relative;
     top:-40px;
@@ -34,10 +38,16 @@ section.forecast { display:none;
      column-gap: 20px;
      grid-row-gap: 20px;
      padding: 0% 5% 0% 5%;
-   
+     
  
      } 
-.container1 img:hover {
+
+    .container1 img {
+	   width: 100%;
+	   border-radius:40px 40px;
+	   
+	   }		 
+    .container1 img:hover {
         filter: drop-shadow(4px 4px 8px black);
     }
 }

@@ -2,18 +2,19 @@
 
 * {
     box-sizing: border-box;
-	margin:auto;
-    padding:10px;
-    
+	
+    margin:auto;
+    padding: 20px;
     
   
 } 
   
-
-body {
-  background:#F3EEE8;
-  font-size: 100%;
+  
    
+body {
+  
+  font-size: 100%;
+   background: linear-gradient(to left, #F3D9DC, white);
   max-width: 100%;
       
 }
@@ -57,11 +58,18 @@ header img {
         filter: drop-shadow(4px 4px 8px black);
     }
 
+.container1 img {
+	   width: 100%;
+	   border-radius:50px 50px;
+	   
+	   }	
+
 nav ul li {
     background-color: #7681B3;
     padding: .5em;
     margin-top: 0px;
     font-size:1.5em;
+    border-radius: 10px 10px;
 }
  
 nav ul li a {color: #f0f7b3;
@@ -69,11 +77,22 @@ nav ul li a {color: #f0f7b3;
    text-decoration: none;}
 nav ul li.active a {
     background: red;
-     
+ 
+
+}
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #555;
+    
 }
 nav ul li a:hover {
     background: #343289;
     color:azure;
+    border-radius: 50px 50px;
+    padding: 20px 
 }
 
 .weather-summary{
