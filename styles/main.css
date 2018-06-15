@@ -33,7 +33,7 @@ body {
 
 
 h1 {
-    font-size: /* x.xrem  (rem is a unit of measure) */;
+   
     
     color: white;
     max-width: 100%;
@@ -41,7 +41,7 @@ h1 {
 }
 
 h2 {
-    font-size: /* x.xrem */;
+    
     text-align:center;
     font-family: verdana, sans-serif;
     color:#601700;
@@ -128,7 +128,7 @@ main ul li {
 }
 
 footer p a {
-    font-size: /* smaller */;
+   
    text-decoration: none;
 }
  
