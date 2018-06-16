@@ -27,13 +27,13 @@ table td:hover{
     color: aliceblue;
 }
 
-tr:nth-child(even-1){
+tr:nth-child(even){
        
     background: #e7ffed; 
      
 }
 
-.yhead{
+#yhead{
 	background: #628ca6;
     color: white;
 }
