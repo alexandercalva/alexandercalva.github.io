@@ -12,33 +12,32 @@
 }
 
 body {
-    background: rgba(2,30,0,.1)
+    background: rgba(2,30,0,.2)
 }
 
 table{
-    width: 50%;
+    font-family: ubuntu, sans-serif;
+	width: 50%;
+	border: 1px solid black;
+    text-align: center;
     box-shadow: 10px 10px rgba(100,100,052,.2);
 }
 table td:hover{
-    background: black;
+    background: #628ca6;
     color: aliceblue;
 }
 
-table, th, tr, td {
-    
-    font-family: ubuntu, sans-serif;
-    
-   
-    border: 1px solid black;
-    text-align: center;
-   
+tr:nth-child(even-1){
+       
+    background: #e7ffed; 
+     
 }
 
-
-#head{
-    background: #628ca6;
+.yhead{
+	background: #628ca6;
     color: white;
 }
+
 
 #co:nth-child(n) {
     background:#628ca6;
