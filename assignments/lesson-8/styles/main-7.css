@@ -106,8 +106,10 @@ nav ul li {
 }
  
 nav ul li a {color: #f0f7b3;
-   line-height: 1em; 
-   text-decoration: none;}
+   line-height: 0.2em; 
+   text-decoration: none;
+   font-size: 1.3rem;
+   }
 nav ul li.active a {
     background: red;
  
@@ -124,8 +126,8 @@ nav button {
 nav ul li a:hover {
     background: #343289;
     color:azure;
-    border-radius: 50px 50px;
-    padding: 20px 
+    border-radius: 20px 20px;
+    padding: 5px 
 }
 
 .weather-summary{
