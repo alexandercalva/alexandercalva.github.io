@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+
+
+.container {
+    
+    display: flex;
+    padding: 17%;
+   justify-content: center;   
+   align-items: center;
+    
+}
+
+body {
+    background: rgba(2,30,0,.2)
+}
+
+table{
+    font-family: ubuntu, sans-serif;
+	width: 50%;
+	border: 1px solid black;
+    text-align: center;
+    box-shadow: 10px 10px rgba(100,100,052,.2);
+}
+table td:hover{
+    background: #628ca6;
+    color: aliceblue;
+}
+
+tr:nth-child(even){
+       
+    background: #e7ffed; 
+     
+}
+
+#yhead{
+	background: #628ca6;
+    color: white;
+}
+
+
+#co:nth-child(n) {
+    background:#628ca6;
+    color: white;
+}
+
+thead, tfoot {
+    background: #7fb9c2;
+}
+tbody{
+    background: #e7f0ed;
+}

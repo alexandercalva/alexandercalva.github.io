@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Stormcenter">
+<meta name="author" content="Alexander Calva">
+<title>Stormcenter</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="stylesheet" href="styles/normalize.css">
+ <link rel="stylesheet" href="styles/main-7.css">
+ <link rel="stylesheet" href="styles/large-7.css">
+ <link rel="stylesheet" href="styles/medium-7.css">
+ <link rel="stylesheet" href="styles/small.css">
+
+ <script src="scripts/currentdate.js"></script>
+ <script src="scripts/hamburger.js"></script>
+ <script src="scripts/windchill.js"></script>    
+ 
+  
+
+  
+ </head>
+<body>
+  <header>
+     <img src="images/logo.png" alt="logo">
+     <h1>InfoClimate</h1>
+  </header>
+
+  <nav>
+       <button onclick="boton()">&#9776;</button>
+      <ul id="primaryNav" class="hide">
+    	<li><a href="franklin-7.html">Home</a></li>
+    	<li><a href="#">Franklin </a></li>
+    	<li><a href="#">Greenville</a></li>
+    	<li><a href="#">Springfield</a></li>
+    	<li><a href="#">Storm Center</a></li>
+    	<li><a href="gallery-7.html">Gallery </a></li>
+    </ul>		
+  </nav>
+    
+<!-- CONTENT HERE -->
+<main>
+    <h1>Storm Report</h1>
+        <form method="get" action="thanks.html">
+			<fieldset>
+				<legend>Personal Information</legend>
+				<label class="app">Full Name* <input type="text" name="name"  required " minlength="5"> </label>
+				<label class="app">Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+				<label class="app">Phone Number* <input type="tel" name="phone" placeholder="12345988" required></label>
+				
+				 
+			</fieldset>
+            <fieldset>
+				<legend>Location and Date</legend>
+				<label class="app">Zip Code* <input type="number" name="zipcode" required ></label>
+				<label class="app">Date <input type="date" name="completeDate"></label>
+				 
+				<datalist id="w-storm">
+					<option value="Flash Flood">
+					<option value="Hail">
+					<option value="Hurricane">
+					<option value="Thunderstorm">
+					<option value="Tornado">
+				</datalist>
+			</fieldset>
+            <fieldset>
+			  <legend>Storm Severity</legend>
+			 <div class="slidemaster">
+			<input type="range" min="1" max="10" value="5" class="slider" id="myRange">
+			<p>Value: <span id="demo"></span></p>
+			</div>
+			<script>
+				var slider = document.getElementById("myRange");
+				var output = document.getElementById("demo");
+				output.innerHTML = slider.value;
+				slider.oninput = function() {
+				output.innerHTML = this.value;
+				}
+			</script>
+			</fieldset>
+			
+			<fieldset>
+			
+			<legend>Storm Region</legend>
+				
+				<select name="subject">
+				
+				 <option value="disabled" disabled select> Select Region &#9662</option>
+				 <option value="franklin-7">Franklin</option>
+				 <option value="greenvillee">Greenville</option>
+				 <option value="springfield"> Springfield</option>
+				</select>
+			
+				
+			</fieldset>			
+            <fieldset>    
+				<legend>Danger Level</legend>
+				<label class="sbs"><input type="radio" name="yes" value="y">Yes</label>
+				<label class="sbs"><input type="radio" name="yes" value="m">Maybe</label>
+				<label class="sbs"><input type="radio" name="yes" value="no">No</label>
+				
+			</fieldset>	
+			<fieldset>	
+				<div></div>
+				<legend>Additional Information</legend>
+				<textarea rows="5" cols="60">
+				
+				
+				</textarea>
+			</fieldset>
+            
+			<input type="submit" value="Report" class="submitBtn">
+	</main>
+    
+<!-- FOOTER HERE -->   
+    <footer>
+    <section class="contact">
+      <h3>InfoClimate</h3>
+      <p>529 College Savings Plans
+          For 529 account servicing.
+          (866) 362-1597</p>
+      <P>123 Main St. Anytown, US 99999</P>
+      
+    </section>
+    <section class="footer-bar"> 
+	    <h3>&copy;2018 | All Rights Reserved | InfoClimate |</h3>
+	    <span id="currentdate">May 26, 2018</span>
+    </section>
+  </footer> 
+    
+<script src="js/scripts.js"></script>
+</body>
+</html>
