@@ -9,7 +9,22 @@
     <link href="https://fonts.googleapis.com/css?family=Faster+One" rel="stylesheet"> 
     <link rel="stylesheet" href="style.css">
 
-    <script>
+    
+
+
+  
+  </head>
+
+  <body>
+
+      <header>
+   <h1>Example to use Json </h1>
+      </header>
+
+     <p id="demo1"></p>
+     <p id="demo2"></p>
+     <p id="demo3"></p> 
+      <script>
 
      
       var header = document.querySelector('header');
@@ -75,36 +90,30 @@
 	request.onload = function() {
   var superHeroesText = request.response; // get the string from the response
   var superHeroes = JSON.parse(superHeroesText); // convert it to an object
-  populateHeader(superHeroes);
+  console.log(superHeroes);
+  document.getElementById("demo1").innerHTML = superHeroes.squadName;   
+  document.getElementById("demo2").innerHTML = superHeroes.homeTown; 
+  document.getElementById("demo3").innerHTML = superHeroes.members[0].name;        
+          
+        populateHeader(superHeroes);
   showHeroes(superHeroes);
-   document.getElementById("demo").innerHTML = superHeroestext;
+  
 }
  
  var myJSON = { "name": "Chris", "age": "38" };
 myJSON
 var myString = JSON.stringify(myJSON);
 myString
-document.getElementById("demo").innerHTML = myString; 
-document.getElementById("demo1").innerHTML = myString; 
+//document.getElementById("demo").innerHTML = myString; 
+
  
  </script>
-
-
-  
-  </head>
-
-  <body>
-
-      <header>
-   <h1>Example to use Json </h1>
-      </header>
-
-      <section>
-
-      </section>
       
-    <p id="demo"></p>
-    <p id="demo1"></p>
+      
+      
+      
+    
+    
       
 
 
