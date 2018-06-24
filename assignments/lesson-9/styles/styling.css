@@ -11,3 +11,6 @@ div.container {
   text-align: center;
   padding: 10px 20px;
 }
+p.left {
+	text-align: left;
+}
