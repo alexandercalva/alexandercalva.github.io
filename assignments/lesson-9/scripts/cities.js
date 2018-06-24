@@ -15,7 +15,7 @@ window.onload = function program() {
     document.getElementById("f-event0").innerHTML = obtainedata.towns[0].events[0];
     document.getElementById("f-event1").innerHTML = obtainedata.towns[0].events[1];
     document.getElementById("f-event2").innerHTML = obtainedata.towns[0].events[2];
-    // This is for green city
+ 
     document.getElementById("greenvilleName").innerHTML = obtainedata.towns[1].name;
     document.getElementById("greenvilleMotto").innerHTML = obtainedata.towns[1].motto;
     document.getElementById("greenvilleYear").innerHTML = obtainedata.towns[1].yearFounded;
@@ -25,7 +25,7 @@ window.onload = function program() {
     document.getElementById("g-event1").innerHTML = obtainedata.towns[1].events[1];
     document.getElementById("g-event2").innerHTML = obtainedata.towns[1].events[2];
     document.getElementById("g-event3").innerHTML = obtainedata.towns[1].events[3];
-    // This is for sringfield
+
     document.getElementById("springfieldName").innerHTML = obtainedata.towns[3].name;
     document.getElementById("springfieldMotto").innerHTML = obtainedata.towns[3].motto;
     document.getElementById("springfieldYear").innerHTML = obtainedata.towns[3].yearFounded;
