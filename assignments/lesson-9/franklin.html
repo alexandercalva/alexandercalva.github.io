@@ -2,6 +2,7 @@
 <html lang="en-us">
 <head> 
   <title>Infoclimate</title>
+  <meta charset="utf-8">
   <meta name="keywords" content="HTML,CSS,XML,JavaScript">
   <meta name="author" content="Alexander Calva">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,10 +12,11 @@
     <link rel="stylesheet" href="styles/medium-7.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/styling.css">
-	 <script src="scripts/currentdate.js"></script> </head>
+	 <script src="scripts/currentdate.js"></script> 
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/windchill.js"></script>
-	<script src="scripts/cities.js"></script> </head>
+	<script src="scripts/weather.js"></script>
+	</head>
    
     
 	
@@ -36,8 +38,8 @@
       <ul id="primaryNav" class="hide">
     	<li><a href="index.html">Home</a></li>
     	<li><a href="franklin.html">Franklin </a></li>
-    	<li><a href="#">Greenville</a></li>
-    	<li><a href="#">Springfield</a></li>
+    	<li><a href="greenville.html">Greenville</a></li>
+    	<li><a href="springfield.html">Springfield</a></li>
     	<li><a href="stormcenter.html">Storm Center</a></li>
     	<li><a href="gallery-7.html">Gallery </a></li>
     </ul>		
@@ -45,28 +47,21 @@
   
   <main>
     
-    <h2></h2>
+    
 
 <section>
   <img src="images/franklin.jpg" alt="Franklin city" style="width:100%">
   <div class="container">
-    <p> <span id="franklinName" </span></p>
-	<p class="left"> Motto: <span id="franklinMotto" </span></p>
-	<p class="left"> Year Foundation: <span id="franklinYear" </span></p>
-	<p class="left"> Population: <span id="franklinPopulation" </span></p>
-	<p class="left"> Rainfall: <span id="franklinRainfall" </span></p>
-	<h3>Events</h3>
-	<p class="left">1. <span id="f-event0" </span></p>
-	<p class="left">2. <span id="f-event1" </span></p>
-	<p class="left">3. <span id="f-event2" </span></p>
+    <p> <span id="franklinName" ></span></p>
+	 <h2> Franklin</h2>
     <h3>Weather</h3>
-	<p class="left"> Current Temperature: <span id="current-temp" </span></p>  
-	<p class="left"> Weather Description: <span id="description" </span></p>
-	<p class="left"> High Temperature: <span id="highT" </span></p>  
-	<p class="left"> Low Temperature: <span id="lowT" </span></p>
-	<p class="left"> Wind Speed: <span id="speed" </span></p>
+	<p class="left"> Current Temperature: <span id="current-temp"> </span></p>  
+	<p class="left"> Weather Description: <span id="description"> </span></p>
+	<p class="left"> High Temperature: <span id="highT"> </span></p>  
+	<p class="left"> Low Temperature: <span id="lowT"> </span></p>
+	<p class="left"> Wind Speed: <span id="speed"> </span></p>
 	
-	<img id="icon" src=""https://openweathermap.org/img/w/02d.png" alt="weather icon">
+	<img id="icon" src="https://openweathermap.org/img/w/02d.png" alt="weather icon">
 	
 	
   </div>
