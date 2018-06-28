@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head> 
+  <title>InfoClimate-Greenville</title>
+  <meta charset="utf-8">
+  <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+  <meta name="author" content="Alexander Calva">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main-7.css">
+    <link rel="stylesheet" href="styles/large-7.css">
+    <link rel="stylesheet" href="styles/medium-7.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/styling.css">
+	 <script src="scripts/currentdate.js"></script> 
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/windchill.js"></script>
+	<script src="scripts/weather.js"></script>
+    <script src="scripts/include.js"></script>
+	<script src="scripts/wayfind.js"></script>
+	</head>
+	
+	<body>
+
+
+
+  <header includefile="header.html">
+  </header>
+
+  <nav>
+       <button onclick="boton()">&#9776;</button>
+      <ul id="primaryNav" class="hide">
+    	<li><a href="index.html">Home</a></li>
+    	<li><a href="franklin.html">Franklin </a></li>
+    	<li class="active"><a href="greenville.html">Greenville</a></li>
+    	<li><a href="springfield.html">Springfield</a></li>
+    	<li><a href="stormcenter.html">Storm Center</a></li>
+    	<li><a href="gallery-7.html">Gallery </a></li>
+    </ul>		
+  </nav>
+  
+  <main>
+    
+    
+
+<section>
+ <div class="polaroid">
+  <img src="images/greenville.jpg" alt="greenville city" style="width:100%">
+  <div class="container">
+   	 <h2> Greenville Weather</h2>
+    <img id="icon1" src="https://openweathermap.org/img/w/02d.png" alt="weather icon" style="width:20%">
+	<p class="left"> Current Temperature: <span id="current-temp1" ></span></p>  
+	<p class="left"> Weather Description: <span id="description1" ></span></p>
+	<p class="left"> High Temperature: <span id="highT1" ></span></p>  
+	<p class="left"> Low Temperature: <span id="lowT1" ></span></p>
+	<p class="left"> Wind Speed: <span id="speed1" ></span></p>
+	
+	
+	
+	
+  </div>
+ </div> 
+</section>
+
+</main>
+
+   <footer includefile="footer.html">
+    
+  </footer>
+<script> include(); </script>
+
+</body>
+</html>
