@@ -1,24 +1,21 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head> 
-  <title>InfoClimate-Franklin</title>
+  <title>Infoclimate</title>
   <meta charset="utf-8">
-  <meta name="description" content="Web Page to know the weather of Franklin City"> 
-  <meta name="keywords" content="Weather, Real time, Franklin City, Storm reporter, Images">
-   <meta name="author" content="Alexander Calva">
+  <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+  <meta name="author" content="Alexander Calva">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/main-7.css">
     <link rel="stylesheet" href="styles/large-7.css">
     <link rel="stylesheet" href="styles/medium-7.css">
     <link rel="stylesheet" href="styles/small.css">
-   
+    <link rel="stylesheet" href="styles/styling.css">
 	 <script src="scripts/currentdate.js"></script> 
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/windchill.js"></script>
 	<script src="scripts/weather.js"></script>
-	<script src="scripts/include.js"></script>
-	<script src="scripts/wayfind.js"></script>
 	</head>
    
     
@@ -27,11 +24,25 @@
 
 
 
- <header includefile="header.html">
+  <header>
+    
+	 
+		<img src="images/logo.png" alt="logo">
+     
+	   <h1>InfoClimate</h1>
+    
   </header>
 
-  <nav includefile="nav.html">
-       	
+  <nav>
+       <button onclick="boton()">&#9776;</button>
+      <ul id="primaryNav" class="hide">
+    	<li><a href="index.html">Home</a></li>
+    	<li><a href="franklin.html">Franklin </a></li>
+    	<li><a href="greenville.html">Greenville</a></li>
+    	<li><a href="springfield.html">Springfield</a></li>
+    	<li><a href="stormcenter.html">Storm Center</a></li>
+    	<li><a href="gallery-7.html">Gallery </a></li>
+    </ul>		
   </nav>
   
   <main>
@@ -39,30 +50,39 @@
     
 
 <section>
-  <div class="polaroid">
-	<img src="images/franklin-1200-800.jpg" alt="Franklin city" style="width:100%">
-	<div class="container">
-   	 <h2> Franklin Weather</h2>
-   	<img id="icon" src="https://openweathermap.org/img/w/02d.png" alt="weather icon" style="width:20%">
+  <img src="images/franklin.jpg" alt="Franklin city" style="width:100%">
+  <div class="container">
+    <p> <span id="franklinName" ></span></p>
+	 <h2> Franklin</h2>
+    <h3>Weather</h3>
 	<p class="left"> Current Temperature: <span id="current-temp"> </span></p>  
 	<p class="left"> Weather Description: <span id="description"> </span></p>
 	<p class="left"> High Temperature: <span id="highT"> </span></p>  
 	<p class="left"> Low Temperature: <span id="lowT"> </span></p>
 	<p class="left"> Wind Speed: <span id="speed"> </span></p>
-	<p class ="left"> Wind Chill: <span id="output"></span></p>
 	
+	<img id="icon" src="https://openweathermap.org/img/w/02d.png" alt="weather icon">
 	
 	
   </div>
- </div>
+  
 </section>
 
 </main>
- 
-  <footer includefile="footer.html">
-    
+
+    <footer>
+    <section class="contact">
+       
+	  <h3>InfoClimate</h3>
+      <p>529 College Savings Plans
+          For 529 account servicing.
+          (866) 362-1597</p>
+      <P>123 Main St. Anytown, US 99999</P>
+      
+    </section>
+    <section class="footer-bar"> 
+	    <h3>&copy;2018 | All Rights Reserved | InfoClimate |</h3>
+	    <span id="currentdate">May 26, 2018</span>
+        <p>API used from<a href="http://openweathermap.org" target="_blank">OpenWeatherMap.org</a></p>
+	</section>
   </footer>
-<script> include(); </script>
-</body>
-</html> 
-        
