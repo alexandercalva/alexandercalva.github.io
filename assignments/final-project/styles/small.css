@@ -1,0 +1,139 @@
+nav button {
+	display: none;
+}
+
+@media screen and (max-width: 431px){
+  *{
+    box-sizing: border-box;
+	margin: auto;
+	padding: 9px 0px 7px 0px;
+	
+	
+  }
+   body {
+    margin: auto 0;
+	  font-size: 100%;
+   
+     max-width: 100%;
+   }
+    nav{
+        display:block;
+		position: absolute;
+		right:50%;
+		top: 12%;
+		
+		font-family: Verdana, sans-serif;
+		max-width: 100%;
+      
+    }
+   nav button {
+    display: block;
+	background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    color: #ec4c4c;
+    
+} 
+  
+   nav ul.hide { 
+	
+		display:none;
+		
+   }
+    
+	 .polaroid {
+  width: 100%;
+  background: black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
+}
+	 
+	 nav ul li a {
+     
+	 position: relative;
+    text-decoration:none;
+     line-height: 1.5em; 
+	top:0%px;
+	right: 0px;
+	color: #7de3ed;
+	font-size: 1em;
+	transition: 0.4s;
+    }
+	nav ul li { list-style-type: none;
+    
+	background: rgba(100,0,0,.2);
+	font-size: 1em;
+	padding: 18px;
+	
+	width: 180%;
+	
+    
+	}
+   
+
+   nav ul li a:hover { 
+   background-color:#7de3ed;
+   color: black;
+   border-radius: 20px 20px;
+   padding: 4px;
+   }
+   
+   nav ul li.active a{ 
+    color: #ec4c4c;
+    border-radius:20px 20px;
+   }
+   
+	
+   
+
+	
+
+
+
+#imagen{
+ position: relative;
+ 
+ width: 100%;
+ 
+}
+#picture{
+    position: relative;
+    top:-40px;
+     width: 100%;
+  
+     
+}
+ 
+ 
+  header h1 {
+     position: absolute;
+     left: 17%;
+	font-size: 180%;
+	 
+  }  
+  header img {
+	width: 180px;
+	position: absolute;
+	left: -5px;
+	top: -50px;
+	
+  }
+ 
+
+.polaroid img {
+	display: relative;
+	position: center;
+	width: 80%;
+}
+ 
+ .contenedor{
+	 
+	 width:100%;
+	}
+    
+    
+       
+}
+
+
+

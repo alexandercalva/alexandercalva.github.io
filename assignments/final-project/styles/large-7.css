@@ -1,0 +1,85 @@
+
+  @media screen and (min-width: 663px) {
+    body{
+	  background: black;
+	  margin: auto;
+	  
+	}		
+    nav button {
+        
+        display:none;
+	     
+    }
+    
+	nav ul {
+        display: flex;
+        
+		list-style-type: none;
+		
+    }   
+   nav ul li a{
+   
+   transition: 0.4s;
+   }
+   
+   header img { 
+    position: absolute;
+    top:-48px;
+    left:10px;
+    width: 200px;
+    
+
+}
+   main p{
+    color:white;
+   
+   }
+   header, main, footer { 
+     max-width: 100%; 
+   }
+	main img {
+	 width: 100%;
+	
+	}
+	.contenedor{
+	 display: flex;	
+	}
+    .contenedor2{
+		display: block;
+		width: 100%;
+		
+	}
+	.tour{
+	 display: flex;
+	
+	
+	}
+	
+	.container1{
+     clear:both;
+     display: grid;
+	 width: 100%;
+	 grid-template-columns: 1fr 1fr 1fr;
+     column-gap: 2px;
+     grid-row-gap: 1px;
+     padding: 0% 2% 0% 2%;
+	 
+     
+ 
+     } 
+     .polaroid img{
+       width: 100%;
+  
+     }
+	 
+	 
+  
+	.container1 img {
+	   width: 100%;
+	   border-radius:50px 50px;
+	   
+	   }		 
+    .container1 img:hover {
+        filter: drop-shadow(4px 4px 8px black);
+    }
+}

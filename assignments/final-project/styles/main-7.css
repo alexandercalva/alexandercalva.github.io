@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css?family=Domine|Forum|Libre+Baskerville|Marck+Script');
+
+* {
+    box-sizing: border-box;
+	margin:auto;
+    padding: 10px;
+    
+  
+} 
+  
+  
+   
+body {
+  
+  font-size: 100%;
+   background:black;
+  max-width: 100%;
+      
+}
+ 
+ 
+  body{
+    background: #ecf0f1;
+}
+ 
+
+.acordeon {
+  width: 70%;
+  margin: auto;
+}
+ p {
+  color: white;
+ }
+ 
+ 
+.acordeon_titulo{
+ cursor:pointer;
+ 
+}
+.acordeon_contenido {
+	
+}
+ .table{
+	 background: white;
+ }
+
+
+
+ div.polaroid-reg {
+  width: 95%;
+  background: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+  border-radius: 20px;
+}
+ .table-white{
+	 color: black;
+	 background: white;
+ }
+ .display {
+	 display: flex;
+	 padding: 5px;
+	 width: 100%;
+	 
+ }
+   .text-black {
+     color: black;
+   
+   }
+   form label.app, form div {
+  display: block;
+  padding-top: 1rem;
+  color: #9c2c13;
+  font-size: .8rem;
+  }
+  form label.app input, form label.app select {
+  -webkit-appearance: none;
+  display: block;
+  font-size: 1rem;
+  border: solid 1px #758;
+  border-radius: 5px;
+  padding: .50rem;
+  color: black;
+  width: 100%;
+  max-width: 15rem;
+  background-color: #b1b1b1;
+  }	
+  form label.sbs {
+  display: block;
+  padding: .75rem 0;
+  color: #555;
+  }
+   .conthead {
+     
+	 
+	 background: linear-gradient(to right, white , black);
+	  height: 45px;
+  
+ }	
+.slider:hover {
+    opacity: 1;
+} 
+ h1 {
+	 color: white;
+	 text-align: center;
+	 
+ }
+  
+ 
+  
+  
+  
+header, main, footer { 
+  max-width: 100%; 
+}
+ body{
+	  margin: auto;
+	
+	}		
+header { 
+    text-align: center;
+    background:rgba(255,255,255,.2);
+    font-size: 1.2em;
+}
+
+
+
+.container1{
+     display: grid;
+	 grid-template-columns: 1fr;
+     column-gap: 10px;
+     grid-row-gap: 20px;
+     padding: 0% 5% 0% 5%;
+	 width: 80%;
+     
+ 
+     } 
+.container1 img:hover {
+        filter: drop-shadow(4px 4px 8px black);
+    }
+
+.container1 img {
+	   width: 70%;
+	   border-radius:50px 50px;
+	   
+	   }	
+
+nav ul li {
+    
+    padding: 0px;
+    margin-top: -30px;
+    font-size:10px;
+    border-radius: 10px 10px;
+	
+	
+}
+ nav {
+	 max-width: 100%;
+	
+ }
+nav ul li a {color: #7de3ed;
+   line-height: 1.5em; 
+   text-decoration: none;
+   font-size: 1.3rem;
+     
+  }
+nav ul li.active a {
+    color: #ec4c4c;
+	border-radius:20px 20px;
+	padding: 4px;
+	
+ 
+
+}
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #555;
+    
+}
+nav ul li a:hover {
+    background: rgba(0,255,255,.9);
+    color:black;
+    border-radius: 20px 20px;
+    padding: 10px;
+}
+
+
+ #picture{
+    position: relative;
+    top:-40px;
+     width: 100%;
+    padding:0px;
+     
+}
+
+ h3 {
+    clear:both;
+    text-align: center;
+    color: white;
+}
+
+.highlow{
+    position:relative;
+    top:-30px;
+    font-size: 1.5em;
+}
+
+.white{
+	color:white;
+}
+
+
+main {}
+main h2 {
+	text-align:center;
+	color:white;
+}
+main figure { margin: 0 0 .2rem 2%; width:96%; }
+main figure img {
+    
+    width: 100%;
+    padding: 0; 
+}
+
+.container {
+	
+	display: flex;
+	
+}
+.town-article{
+
+   
+	
+	font-family: "Forum", cursive;
+    font-size: 1.3em;
+    width: 45%;
+  
+    
+}
+
+.contact{
+    clear:both;
+    text-align: center;
+    background: rgba(255,255,255,.2);
+}
+.footer-bar {
+    font-family: "Marck Script", cursive; 
+    background: #ec4c4c;
+    text-align: center;
+   
+	font-weight: bold;
+    color:white;
+}
+ footer{
+  color: white;
+ }
+ 
+.footer-bar a {
+   text-decoration: none;
+   color: white;
+
+}

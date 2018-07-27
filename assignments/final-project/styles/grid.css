@@ -1,0 +1,30 @@
+body {
+background: black;
+
+}
+.container {
+ display: grid;
+ width: 50%;
+ margin: 0 auto;
+ 
+ }
+ .large{
+ grid-template-columns: 3fr;
+    
+   
+ 
+}
+
+ 
+ #header-text{
+   color:rgba(0,0,0,.2);
+   display: block;	 
+   position: absolute;
+   right: 14px;
+   top: 35px;
+ }
+ 
+ header a{
+	 text-decoration: none;
+	 color: rgba(0,0,0,.2);
+ }
