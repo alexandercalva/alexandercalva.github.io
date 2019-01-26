@@ -1,0 +1,241 @@
+<DOCTYPE html>
+<html lang ="en-us">
+
+<head
+  <meta charset = "utf-8">
+  <title> Fluency Evidence Week3 </title>
+ 
+    
+</head>
+<body>
+
+	<header>
+	 
+	</header>
+	<main>
+	  <h1> Loops, Conditional Statements, Functions, Variables, Parameters, Arrays, Associative Arrays in JavaScript</h1>
+	  
+	  <h2> Loops</h2>
+	  <h3> For</h3>
+	  
+		<pre>
+		var sum;
+		sum = 0;
+		for (var i = 0; i <  5; i++)
+		{
+			sum += i;
+		}
+		document.getElementById("demo").innerHTML = sum;
+		</pre>
+     <p> Answer: </p>  
+     <p id ="demo"></p>
+     <h3>While Loop</h3>	
+		<pre>
+		while (condition) {
+		
+		// code block to be executed
+		
+		}
+		</pre>
+		<p>Example</p>
+		<pre>
+		while(sum > 0) 
+		{
+			sum --;
+		}	 
+		document.getElementById("demo1").innerHTML = sum;
+		
+		</pre>
+       <p> Answer: </p>  
+     <p id ="demo1"></p>
+	<h3> The Do/While Loop</h3>
+		<pre>
+		do {
+			//code block to be executed
+		}	
+		while (condition);
+		</pre>
+	<p> Example</p>
+		<pre>
+		 do {
+			sum = sum +2;
+  
+		}
+		while(sum < 12);
+		document.getElementById("demo2").innerHTML = sum;
+		</pre>
+	<p> Answer: </p>  
+     <p id ="demo2"></p>
+	 <h2>Conditional Statements</h2>
+		<pre>
+		if (condition)
+		{
+			// block of code to be executed if the condition is true
+		
+		} else {
+			//block of code to be executed if the condition is false
+		}
+		</pre>
+		
+		<p>Example</p>
+		<pre>
+		 if(sum < 12 )
+		{
+				document.getElementById("demo3").innerHTML = "The condition is true";
+		} else 
+		{
+				document.getElementById("demo3").innerHTML = "The condition is false";
+		}  
+		</pre>
+		
+		
+		<p> Answer: </p>  
+     <p id ="demo3"></p>
+	 <h2>The Switch Statement</h2>
+	 <pre>
+	 switch(expression) {
+	 case x:
+		//code block;
+		break;
+	 case y:
+		//code block;
+		break;
+	 default:
+		//code block;
+	 }
+	 </pre>
+	 <p>Example</p>
+	 <input name="number" type="text" id="number1"/>
+	 
+	 <pre>
+	  var op = parseFloat(document.getElementById("number1").value);
+  
+		
+  
+		switch(op) {
+	case 1:
+		document.getElementById("demo4").innerHTML = "The number is " + op ;
+		break;
+	case 2:
+		document.getElementById("demo4").innerHTML = "The number is " + op;
+		break;
+	case 3:
+	    document.getElementById("demo4").innerHTML = "The number is " + op;
+		break;
+	case 4:
+	    document.getElementById("demo4").innerHTML = "The number is " + op;
+		break;
+	default:
+	    document.getElementById("demo4").innerHTML = "The number is out of range ";
+		break;
+    }
+  
+	 
+	 </pre>
+	 <p> Answer: </p>  
+     <p id ="demo4"></p>
+	<h2>Functions</h2> 
+	<pre>
+	function myFunction(p1, p2) {
+		return p1 * p2;   // The function returns the product of p1 and p2
+    }
+	</pre>
+	<p>Example</p>
+	<pre>
+	 function doInputOutput() {
+
+	var temperature = parseFloat(document.getElementById("input-tempt").value);
+	var wind = parseFloat(document.getElementById("input-wind").value);
+	var result = windChill(temperature, wind); // Send the values of temperature and wind to the function windChill()
+	document.getElementById("output").innerHTML = result.toFixed(2);;
+	}
+
+	function windChill(t, s) {  // Replace the variables t = temperature, s = wind 
+
+		var f= 35.74 + 0.6215*t -35.75*Math.pow(s,0.16) +0.4275*t*Math.pow(s,0.16);
+		return f; 
+	}
+	</pre>
+	<h3>Program to calculate the wind chill with respect to wind speed and temperature</h3> <br>
+	<h4>Please enter temperature(Fahrenheit):</h4> <input type = "text" id ="input-tempt" size = "5"> <br>
+	<h4>Please enter wind speed(miles/hour):</h4> <input type = "text" id ="input-wind" size = "5"> <br><br>
+	<button type ="button" onclick = "doInputOutput()" style="width:180px; height:25px"> Wind Chill </button> <br><br>
+	<div id="output"></div>
+    
+	<!--Variables -->
+	<h2>Variables</h2>
+	<h3>JavaScript variables are containers for storing data values</h3>
+	<pre>
+	var x = 5;
+	var y = 6;
+	var z = x + y;
+	
+	
+	From the example above, you can expect:
+
+	x stores the value 5
+	y stores the value 6
+	z stores the value 11
+
+	</pre>
+	
+	<!-- Parameters-->
+	<h2>Parameters</h2>
+	<pre>
+	function functionName(parameter1, parameter2, parameter3) {
+		// code to be executed
+	}
+
+	Function parameters are the names listed in the function definition.
+
+	Function arguments are the real values passed to (and received by) the function.
+	</pre>
+	<!-- Arrays-->
+	
+	<h2> Arrays</h2>
+	<pre>
+	JavaScript arrays are used to store multiple values in a single variable.
+	var cars = ["Saab", "Volvo", "BMW"];
+	
+	
+	
+	Using the JavaScript Keyword new
+
+	
+	Example
+	var cars = new Array("Saab", "Volvo", "BMW");
+	var cars = new Array();
+	
+   Object:
+	var person = {firstName:"John", lastName:"Doe", age:46};
+	The firstName would be:
+	document.getElementById("demo5").innerHTML = person["firstName"];	
+	</pre>
+	<p id="demo5"></p>
+	<h2>Associative Arrays</h2>
+	<pre>
+	JavaScript does not support arrays with named indexes.
+
+	In JavaScript, arrays always use numbered indexes. 
+	
+	WARNING !!
+	If you use named indexes, JavaScript will redefine the array to a standard object.
+	After that, some array methods and properties will produce incorrect results.
+	
+	Example:
+	
+	 var person = [];
+	person["firstName"] = "John";
+	person["lastName"] = "Doe";
+	person["age"] = 46;
+	var x = person.length;     // person.length will return 0
+	var y = person[0];         // person[0] will return undefined 
+	
+	</pre>
+	
+	
+	<script src="scripts/week3.js"></script>	
+	  
+	</main>
+</body>
+</html>	
