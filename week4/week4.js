@@ -12,5 +12,5 @@ var vehicles = {
   console.log(vehicles);
   var json = JSON.stringify(vehicles);
    console.log(json);
-   document.getElementById("demo").innerHTML = vehicles[1];
+   
   
