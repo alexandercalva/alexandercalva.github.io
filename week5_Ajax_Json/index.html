@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head> 
+  <title>Json -Ajax</title>
+  <meta charset="UTF-8">
+  <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+  <meta name="author" content="Alexander Calva">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/small.css">
+     <script src="js/week5.js"></script>
+	
+	
+</head>
+
+<body>
+
+
+
+  <header>
+    
+	 
+		
+     
+	   <h1>Json - Ajax</h1>
+    
+  </header>
+
+  <nav>
+      
+  </nav>
+  <main>
+    
+    
+
+<div class="polaroid">
+  
+  <div class="container">
+   
+   <div id ="name">
+	 <button onclick="names()"> Name </button>
+   </div>
+   <div id ="lastname">
+	 <button onclick="lastName()"> Last Name </button>
+   </div>   
+   <div id = "id">
+      <button onclick="ide()"> Id </button>
+   </div>
+      
+	 
+  </div>
+</div>
+
+<script>
+ function names() {
+   if(cont_name == 0)
+	{    
+	var data = new XMLHttpRequest();
+     var requrl = "https://reqres.in/api/users?page=2";
+ 
+     data.open('GET', requrl, true);
+     data.send();
+	  data.onload = function(){
+	 var dataInfo = JSON.parse(data.responseText);
+	 console.log(dataInfo);
+	var name = document.querySelector("#name")
+	var index;
+	
+	for(index in dataInfo.data)
+    	
+	 {
+		cont_name ++;
+		var p = document.createElement('p');
+		p.append(dataInfo.data[index].first_name);
+		name.append(p);
+	 }
+  }
+ }// end if
+
+ 
+ }
+ 
+ function lastName() {
+     var data = new XMLHttpRequest();
+     var requrl = "https://reqres.in/api/users?page=2";
+ 
+     data.open('GET', requrl, true);
+     data.send();
+	  data.onload = function(){
+	 var dataInfo = JSON.parse(data.responseText);
+	 
+	var lastname = document.querySelector("#lastname")
+	var index;
+	
+	if(cont_last_name == 0) {
+		for(index in dataInfo.data)
+    	
+		{
+		    cont_last_name ++;
+			var p = document.createElement('p');
+			p.append(dataInfo.data[index].last_name);
+			lastname.append(p);
+		}
+    }
+ }
+ }
+ function ide() {
+     var data = new XMLHttpRequest();
+     var requrl = "https://reqres.in/api/users?page=2";
+ 
+     data.open('GET', requrl, true);
+     data.send();
+	  data.onload = function(){
+	 var dataInfo = JSON.parse(data.responseText);
+	 
+	var ide = document.querySelector("#id")
+	var index;
+	if(cont_id == 0)
+	{
+	for(index in dataInfo.data)
+    	
+	 {
+		cont_id ++;
+		var p = document.createElement('p');
+		p.append(dataInfo.data[index].id);
+		id.append(p);
+	 }
+    }
+   }
+ }
+</script>
+
+      
+     <script src="js/week5.js"></script>
+    
+ </main>    
+   
+   
+    
+    
+    <footer>
+    
+   
+   
+	    <p>API used <a href="https://reqres.in/api/users?page=2" target="_blank">https://reqres.in/api/users?page=2</a></p>
+	    
+	    
+   
+  </footer>
+
+</body>
+</html>
