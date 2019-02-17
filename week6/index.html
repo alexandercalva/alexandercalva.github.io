@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head> 
+  <title>Json -Ajax</title>
+  <meta charset="UTF-8">
+  <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+  <meta name="author" content="Alexander Calva">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/small.css">
+     
+	
+	
+</head>
+
+<body>
+
+
+
+  <header>
+    
+	 
+		
+      <h1>DOM </h1>
+	   
+    
+  </header>
+
+  <nav>
+      
+  </nav>
+  <main>
+    
+    
+
+<div class="polaroid">
+  
+ 
+ 
+  <div class ="container">
+   <div>
+     
+	<button onclick ="create()"> Create Element </button>
+    <p id = "create"> </p>   
+  </div>
+    
+   <div>
+    <button onclick ="append()"> Append Child </button>
+    
+	
+   </div>
+   <div id = "insert">
+   
+	<button onclick ="insert()"> Insert before </button>
+   </div>
+  <div id = "remove">
+   
+	<button onclick ="remove()"> Remove Child </button>
+   </div>
+   
+  
+</div>
+
+<script>
+ function create() {
+	
+	var text = prompt("Enter text: "); 
+	var createId = document.querySelector("#create");
+	var par = document.createElement("ul");
+	var content = document.createTextNode(text);
+	par.appendChild(content);
+    createId.append(par);
+ }
+
+
+ 
+    
+
+ function append() {
+   var text = prompt("Enter child name: "); 
+   var appendId = document.querySelector("#create");
+   var item = document.createElement("li");
+   var child = document.createTextNode(text);
+   item.appendChild(child);
+   appendId.append(item);
+ }
+ 
+ function insert() {
+   var text = prompt("Enter new text to insert before: "); 
+   var par = document.createElement("p");
+   var t = document.createTextNode(text);
+   par.appendChild(t);
+   var second = document.querySelector("#create");
+   second.insertBefore(par,second.childNodes[0]);
+   
+ }
+ 
+ function remove() {
+    var par = document.querySelector("#create");
+	par.removeChild(par.childNodes[0]);
+ 
+ }
+  
+ 
+ </script>
+
+      
+    
+    
+ </main>    
+   
+   
+    
+    
+    <footer>
+    
+   
+   
+	   
+	    
+   
+  </footer>
+
+</body>
+</html>
