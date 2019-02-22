@@ -1,0 +1,156 @@
+<!DOCTYPE hmtl>
+<html>
+<head>
+	<title>Designing, Developing CSS transitions with JavaScript </title>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+	<meta name="author" content="Alexander Calva">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <style type="text/css">
+		#box {
+		  background: blue;
+		  width: 400px;
+		  height: 200px;
+		  color: white;
+		  font-size: 2em;
+		  display: flex;
+		  align-items: center;
+		  justify-content: center;
+		  
+		 
+		}
+		#box2 {
+			background: blue;
+			width: 300px;
+			height: 300px;
+			color: white;
+			font-size: 2em;
+			text-align: center;
+			position: absolute;
+			top: 1100px;
+			left: -400px;
+		}
+		#box1 {
+		  background: black;
+		  width: 400px;
+		  height: 200px;
+		  color: white;
+		  font-size: 2em;
+		  display: flex;
+		  align-items: center;
+		  justify-content: center;
+		  
+		 
+		}
+		div button {
+			
+					font-size: 1.5em;
+		}
+		
+    </style>
+    <script>
+		function changeBackground(color) {
+			var element = document.querySelector("#box");
+			element.style.transition ="background 1.0s linear 0s";
+			element.style.background = color;
+        }   
+   
+		function fadeIn(){
+			var element = document.querySelector("#box");
+			element.style.transition ="opacity 1.0s ease-in 0s";
+			element.style.opacity= 1;
+		}
+		
+		function fadeOut(){
+			var element = document.querySelector("#box");
+			element.style.transition ="opacity 1.0s linear 0s";
+			element.style.opacity = 0;
+		}
+        
+		function slideOpen() {
+			var element = document.querySelector("#box1");
+			element.style.transition ="height 0.5s linear 0s";
+			element.style.height = "200px";
+		}
+        function slideClose() {
+			var element = document.querySelector("#box1");
+			element.style.transition ="height 0.5s linear 0s";
+			element.style.height = "0px";
+		}
+   
+		function slideIn(){
+			var element = document.querySelector("#box2");
+			element.style.transition ="left 1s linear 0s";
+			element.style.left = "0px";
+		}
+		
+		function slideOut(){
+			var element = document.querySelector("#box2");
+			element.style.transition ="left 1s linear 0s";
+			element.style.left = "-300px";
+		}
+   </script>
+
+</head>
+<body>
+	<header>
+		<h1>CSS Transitions with JavaScript</h1>
+    
+	</header>
+	<div id="box">I am a box </div>
+	<h3>Background</h3>
+	<div class = "bg">
+		
+		<div>
+			<button onclick ="changeBackground('red')">Red </button>
+		</div>
+		<div>
+			<button onclick ="changeBackground('black')">Black </button>
+		</div>
+		<div>
+			<button onclick ="changeBackground('yellow')">Yellow </button>
+		</div>
+		<div>
+			<button onclick ="changeBackground('blue')">Original</button>
+		</div>
+	</div>	
+    <h3>Fade In -  Fade Out</h3>
+	<div class ="bg">
+		<div>
+			<button onclick ="fadeIn()">Fade In </button>
+		</div>
+		<div>
+			<button onclick ="fadeOut()">Fade Out </button>
+		</div>
+	
+	</div>
+	<h3>Slide Open - Slide Closed</h3>
+	<div id = "box1"> I am a box</div>
+	<div class ="bg">
+		<div>
+			<button onclick ="slideOpen()">Slide Open</button>
+		</div>
+		<div>
+			<button onclick ="slideClose()">Slide Closed </button>
+		</div>
+	</div>
+	<h3>Slide In - Slide Out</h3>
+	<div class = "bg">
+		<div id = "box2"> I am another box</div>
+	    <div>
+			<button onmouseover ="slideIn()">Slide In</button>
+		</div>
+		<div>
+			<button onclick ="slideOut()">Slide Out </button>
+		</div>
+	  
+	
+	
+	</div>
+</body>
+</html>
