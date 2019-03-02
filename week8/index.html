@@ -1,0 +1,114 @@
+<!DOCTYPE hmtl>
+<html>
+<head>
+	<title>Standard JavaScript Events Including those for Mobile Devices ( Ex. onTouchBegin, onLoad, etc.) and Animation and Transition Events </title>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+	<meta name="author" content="Alexander Calva">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/small.css">
+	 <script src="js/events.js"></script>	
+    <style type="text/css">
+		#box {
+		  background: blue;
+		  width: 400px;
+		  height: 200px;
+		  color: white;
+		  font-size: 2em;
+		  display: flex;
+		  align-items: center;
+		  justify-content: center;
+		  
+		 
+		}
+		#box2 {
+			background: blue;
+			width: 300px;
+			height: 300px;
+			color: white;
+			font-size: 2em;
+			text-align: center;
+			position: absolute;
+			top: 1100px;
+			left: -400px;
+		}
+		#box1 {
+		  background: black;
+		  width: 400px;
+		  height: 200px;
+		  color: white;
+		  font-size: 2em;
+		  display: flex;
+		  align-items: center;
+		  justify-content: center;
+		  
+		 
+		}
+		div button {
+			
+					font-size: 1.5em;
+		}
+		
+    </style>
+    <script>
+		
+		
+   </script>
+
+</head>
+<body>
+	<header>
+		<h1>Standard JavaScript Events</h1>
+    
+	</header>
+	
+	<div class = "bg">
+		
+		<div>
+			<button id = "boton">Click </button>
+		</div>
+		<form>
+		  <input ontouchstart = "touch()" type = "text" name = "name" id = "in"/>
+		</form>
+	</div>	
+    <div>
+	<p ontouchmove="myFunction(event)">Touch this paragraph, and move the finger to trigger a function that will display the x and y coordinates of the touch, according the the document:</p>
+
+	<p><strong>Note:</strong> This example is for touch devices only.</p>
+
+	<p id="demo"></p>
+
+	</div>
+	<hr>
+	<div>
+		<p ontouchend="myFunction1()">Touch this paragraph, then release the touch to trigger a function that will write "Hello World".</p>
+
+		<p><strong>Note:</strong> This example is for touch devices only.</p>
+
+		<p id="demo1"></p>
+	 <script>
+	 // onTouchStart( mobile)
+			function touch() {
+			  document.getElementById("in").innerHTML = "Hello";
+			}
+			// Touchmove
+			function myFunction(event) {
+				var x = event.touches[0].clientX;
+				var y = event.touches[0].clientY;
+				document.getElementById("demo").innerHTML = x + ", " + y;
+			}
+			function myFunction1() {
+				document.getElementById("demo1").innerHTML = "Hello World";
+			}
+	 </script>
+	</div>
+	  
+	
+	
+	
+</body>
+</html>
