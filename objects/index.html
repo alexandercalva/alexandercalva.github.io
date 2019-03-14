@@ -1,0 +1,95 @@
+<!DOCTYPE hmtl>
+<html>
+<head>
+	<title>Object Creation Functions, Inheritance, Properties, Methods, Instantiation</title>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+	<meta name="author" content="Alexander Calva">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/small.css">
+	 <script src="js/object.js"></script>	
+    <style type="text/css">
+		
+	
+    </style>
+    <script>
+		
+		
+   </script>
+
+</head>
+<body>
+	<header>
+		<h1>Object Creation Functions, Inheritance, Properties, Methods, Instantiation</h1>
+		    
+	</header>
+<h4>Domestic animals  </h4>	
+<div class = "bg">
+	<div id = "clases">
+		<input type = "text" name = "nom" id= "name" placeholder= "Name" /> 
+		<input type= "button" value= "Who are you?" onclick= "myCat.show()" /> 
+	 </div>
+</div>	
+<h4>Inheritance</h4>
+	
+	<div class="boton">
+	<input type= "button" value= "Dog" onclick= "myDog.printOut()" /> 
+	</div>
+<script>
+function Domestic() {
+		// Properties 
+		this.animal = " ";
+		this.name = " ";
+		// Methods
+		this.configAnimal = function(newAnimal){
+		
+			this.animal = newAnimal;
+		}
+	    this.configName = function(newName){
+		
+			this.name = newName;
+		}
+		this.show = function(){
+		
+			alert("My name is " + this.configName + " and I am a " + this.configAnimal); 
+		}
+	}
+	 // Instance
+	 var myCat = new Domestic();
+	 myCat.configAnimal = "Cat";
+	 var nombre = document.querySelector("#name").value;
+	 myCat.configName = nombre;
+	 // Inheritance
+	 dog.prototype = new Domestic();
+	 function dog(){
+		// dog properties
+		this.race = " ";
+		// dog method
+		this.configRace = function(newRace) {
+			this.race = newRace;
+		}
+	    // Domestic property
+		this.printOut = function(){
+			alert(this.name + " is my name, I am a dog and I am a domestic animal too, my race is " + this.race);
+		}
+		
+	 }
+	// Instance
+	var myDog = new dog();
+	myDog.configName("Rumple");
+	myDog.configRace("Beagle");
+</script>   
+	
+	
+	
+	
+	  
+	
+	
+	
+</body>
+</html>
