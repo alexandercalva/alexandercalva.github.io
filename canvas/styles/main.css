@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css?family=Domine|Forum|Libre+Baskerville|Marck+Script');
+
+* {
+    box-sizing: border-box;
+	
+    margin:auto;
+    padding: 10px;
+    
+  
+} 
+  
+  
+   
+body {
+  
+  font-size: 100%;
+   background:#F3EEE8;
+  max-width: 100%;
+      
+}
+ .bg
+ {
+	 display: flex;
+ } 
+ 
+ .fade {
+	 display: flex;
+ }
+ h1, h2, h3, h4 {
+    font-family: "Libre Baskerville", serif;
+    font-size: 3em;
+    color:rgba(45, 4, 7,.5);
+    text-align: center;
+     
+  
+}
+.boton {
+	text-align: center;
+}	
+ footer {
+  text-align : center;
+ 
+ }
+#draw {
+  background-color: #d0cfcf;
+  border: solid 2px black;
+  display: flex;
+  align-items: center;
+  
+
+}
+
+#boton1, #boton2, #boton3 {
+text-align: center;
+}
+
+
+
+

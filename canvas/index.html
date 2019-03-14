@@ -1,0 +1,77 @@
+<!DOCTYPE hmtl>
+<html>
+<head>
+	<title>HTML5 Tags - Video, Audio, and Canvas</title>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+	<meta name="author" content="Alexander Calva">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/small.css">
+	<script src="js/canvas.js"></script>	
+    
+		
+	
+    </style>
+    <script>
+		
+		
+   </script>
+
+</head>
+<body>
+	<header>
+		<h1>HTML5 Tags - Video, Audio, and Canvas</h1>
+		    
+	</header>
+<h4>Audio</h4>	
+<div class = "bg">
+	<audio controls>
+		<source src= "music/sting.mp3" type= "audio/mpeg">
+	
+	</audio>
+</div>	
+<h4>Video</h4>
+<div class="boton">
+<video controls width="500" height="400">
+	<source src="videos/soccer.mp4" type="video/mp4">
+</video>
+</div>
+<div>
+<h4>Canvas</h4>
+<canvas id= "draw" width="500" height="500">
+Your browser has not support HTML5 - Canvas
+
+
+</canvas>
+<div class="boton">
+<input type="button" id="boton1" value="Fill Square" onclick="rectFill()"/>
+<input type="button" id="boton2" value="Stroke Squares" onclick="rectStroke()"/>
+<input type="button" id="boton3" value="Clear Square" onclick="clearRect()"/>
+</div>
+</div>
+<script>
+var dib = document.querySelector("#draw");
+	draw = dib.getContext("2d");
+	function rectFill(){
+		draw.fillStyle="#387780";
+		draw.fillRect(200,200,100,100);
+	}
+	function rectStroke(){
+		draw.strokeRect(100,100,100,100);
+		draw.strokeRect(100,300,100,100);
+		draw.strokeRect(300,100,100,100);
+		draw.strokeRect(300,300,100,100);
+	}
+	function clearRect(){
+		draw.clearRect(225,225,50,50);
+	}
+</script>
+	
+	
+	
+</body>
+</html>
