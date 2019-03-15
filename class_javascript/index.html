@@ -1,0 +1,81 @@
+<!DOCTYPE hmtl>
+<html>
+<head>
+	<title>Manipulating CSS Class Properties Using JavaScript </title>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+	<meta name="author" content="Alexander Calva">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/small.css">
+    
+		
+    <script>
+		function changeBackground(color) {
+			var element = document.querySelector(".box");
+			element.style.background = color;
+			element.style.color = "white";
+        }   
+		function bg(){
+			var element = document.querySelector(".bg");
+			element.style.background = "#c45234";
+		}
+		function bor(){
+			var element = document.querySelector(".fade");
+			element.style.border = "1px solid blue";
+		}
+		function pad() {
+			var element = document.querySelector("#padi");
+			element.style.padding = "50px";
+		}
+		function siz(){
+			var element = document.querySelector(".dim");
+			element.style.width="5em";
+			element.style.height="5em";
+			element.style.background="powderblue";
+			element.style.color="red";
+		}
+   </script>
+
+</head>
+<body>
+	<header>
+		<h1>Manipulating CSS Class Properties Using JavaScript</h1>
+
+	</header>
+	<div class="box">I am a text</div>
+	<h3>Background</h3>
+	
+	<div class = "bg">
+        <div>
+			<button onclick ="bg()"> Background </button>
+		</div>
+		<div>
+			<button onclick ="changeBackground('red')">Red </button>
+		</div>
+		<div>
+			<button onclick ="changeBackground('black')">Black </button>
+		</div>
+		<div>
+			<button onclick ="changeBackground('yellow')">Yellow </button>
+		</div>
+		<div>
+			<button onclick ="changeBackground('blue')">Blue</button>
+		</div>
+	</div>	
+    <h4>Border</h4>
+	<div class="fade">
+	  <button onclick="bor()"> Border </button>
+	</div>
+	<h4>Padding</h4>
+	<div class="fade">
+	  <button onclick="pad()" id="padi"> Padding </button>
+	</div>
+	<h4>Width/Height</h4>
+	<div class="fade">
+	  <button onclick="siz()" class="dim"> Grow up </button>
+	</div>
+
+</body>
+</html> 
