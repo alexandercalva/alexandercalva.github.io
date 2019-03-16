@@ -1,0 +1,97 @@
+.one {
+    width: 120px;
+    height: 50px;
+}
+
+
+
+
+
+#div1bottom, #div1top {
+  position: relative;
+  cursor: pointer;
+  width: 120px;
+  height: 50px;
+  visibility: hidden;
+}
+
+#div1, #div2, #div3, #div4, #div5 {
+ width: 100px;
+  height: 50px;
+ position: relative;
+ text-align:center;
+ background-color: blue;
+ color: white;
+-webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
+  animation: mymove 5s infinite;
+}
+
+#boton1, #boton2, #boton3 {
+text-align: center;
+}
+
+@keyframes mymove {
+  from {left: -500px;}
+  to {left: 500px;}
+}
+#div1top.useKeyframes, #div1bottom.useKeyframes {
+	animation-name: example;
+	animation-duration: .9s;	
+}
+
+#div1top.useKeyframes2, #div1bottom.useKeyframes2 {
+	animation-name: example2;
+	animation-duration: .8s;
+	animation-delay: 1s;
+}
+
+#div1top.useKeyframes3, #div1bottom.useKeyframes3 {
+	animation-name: example3;
+	animation-duration: 3s;
+	animation-iteration-count: 3;
+}
+
+#div1top.useKeyframes4 {
+	animation-name: example4;
+	animation: example4 5s linear 2s infinite alternate;
+	
+}
+#div1 {animation-timing-function: linear;}
+#div2 {animation-timing-function: ease;}
+#div3 {animation-timing-function: ease-in;}
+#div4 {animation-timing-function: ease-out;}
+#div5 {animation-timing-function: ease-in-out;}
+
+@keyframes example {
+	from {background-color: red;}
+	to {background-color: yellow;}
+   
+}
+
+@keyframes example2 {
+	0%   {background-color: blue;left: 0px; top:0 px;}
+    25%  {background-color: yellow;left: 400px; top:0 px;}
+    50%  {background-color: red;left: 400px; top:400 px;}
+	75%  {background-color: black;left: 0px; top:400 px;}
+	100% {background-color: green;left: 0px; top:0 px;}
+   
+}
+
+@keyframes example3 {
+	0%   {background-color: blue;left: 0px; top:0 px;}
+    25%  {background-color: blue;left: 370px; top:0 px;}
+    50%  {background-color: white;left: 370px; top:370 px;}
+	75%  {background-color: white;left: 0px; top:370 px;}
+	100% {background-color: blue;left: 0px; top:0 px;}
+}
+
+@keyframes example4 {
+	0%   {background-color: blue;left: 0px; top:0 px;}
+    25%  {background-color: yellow;left: 370px; top:0 px;}
+    50%  {background-color: red;left: 370px; top:370 px;}
+	75%  {background-color: black;left: 0px; top:370 px;}
+	100% {background-color: green;left: 0px; top:0 px;}
+   
+}
+
+
