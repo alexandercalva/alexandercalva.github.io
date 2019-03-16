@@ -1,0 +1,104 @@
+
+
+#day{
+	width:500px;
+	height:500px;		
+    background: #76D7EA;
+    transition: all 5s ease-in;	
+}
+
+#sun{
+	width:100px;
+	height:100px;
+	border-radius: 50%;
+    background: #FFDF00;
+	margin-left: 100px;
+	transition: all 5s ease-in;
+}
+
+#day.getDarker { 
+    background: #131862;
+}
+
+#sun.getLighter { 
+    background: #FFFFFF;
+}
+
+#car{
+    width: 300px;
+    height: 123px;
+    background-image: url('images/moto.jpg');
+	background-size: 300px;
+}
+
+#car.move {
+	-webkit-transform: translateX(2000px);
+	transform: translateX (2000px);
+	transition: 2s cubic-bezier(1, 0, 1, 1);
+}
+
+#one, #two, #three{
+	width:70px;
+	height:70px;
+	border-radius: 50%;
+    background: black;	
+	transition: 1s;
+}
+
+#loadButton {
+	margin-bottom: 15px;
+}
+
+#loaderBorder {
+	width: 330px;
+	height: 15px;
+	border: 3px solid black;
+}
+#large {
+  width: 100px;
+  height: 100px;
+  background: red;
+  -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
+  transition: width 2s;
+}
+
+#large:hover {
+  width: 300px;
+}
+#loadedImg {
+	display: none;
+	width: 330px;
+	height: 240px;
+	background-image: url('images/meadow.jpg');
+	background-size: 330px;
+	margin-bottom: 15px;
+}
+
+#loader {
+	width: 0px;
+	height: 15px;
+	background: brown;
+	transition: width 7s;
+	transition-timing-function: steps(10,end);
+}
+
+#loader.increase {
+	width: 330px;
+}
+div {
+  width: 100px;
+  height: 100px;
+  background: blue;
+  color: white;
+  -webkit-transition: width 2s; /* Safari */
+  transition: width 2s;
+}
+#div1 {transition-timing-function: linear;}
+#div2 {transition-timing-function: ease;}
+#div3 {transition-timing-function: ease-in;}
+#div4 {transition-timing-function: ease-out;}
+#div5 {transition-timing-function: ease-in-out;}
+
+div:hover {
+  width: 300px;
+}
