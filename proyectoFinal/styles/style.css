@@ -1,0 +1,458 @@
+@media screen and (max-width: 830px){
+ *{
+    box-sizing: border-box;
+	
+  }
+   body {
+    margin: 0 auto;
+	 background-color: #2b2d42;
+    max-width: 100%;
+    
+   }
+    nav {
+       background-color: #d71414;
+	width:100%;
+	
+    }
+
+nav ul{
+        
+		display:block;
+		
+		margin-left:-1em;
+
+	     
+    }
+  nav ul li {
+   padding:5px;
+   list-style:none;
+}
+  nav ul li a{
+	text-decoration: none;
+	padding: 20px;
+	color: white;
+	font-size: 1.5em;
+	
+}
+nav ul li a:link {
+	color: #84c0c6;
+}
+nav ul li a:visited {
+	color: white;
+}
+nav ul li a:hover {
+	color: #14fcf0;
+}
+nav ul li a:active {
+	color: black;
+}
+
+
+
+main {
+	background-color:#e5e5e5;
+	padding-top:80px;
+	padding-bottom:80px;
+}
+.container {
+	
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr;
+	grid-gap: 10px;
+    	
+}
+
+.container-p, div .text  {
+
+  display: block;
+  margin: auto;
+  width:96%;
+  padding-top:10px;
+
+    
+}
+ .container-p div>p {
+    margin:auto;
+	padding-top:10px;
+}
+
+
+.item  {
+	text-align:center;
+	justify-content:center;
+}
+.item figure img {
+	
+	margin: auto;
+	width:100%;
+	padding: 20px;
+}
+.item figure figcaption {
+	font-size:1.5em;
+	font-weight:bold;
+	color:black;
+	padding:10px;
+	
+}
+
+ form label.app, form div {
+  display: block;
+  padding-top: 1rem;
+  color: #9c2c13;
+  font-size: .8rem;
+  }
+  form label.app input, form label.app select {
+ 
+  display: block;
+  font-size: 1rem;
+  border: solid 1px #758;
+  border-radius: 5px;
+  padding: .50rem;
+  color: black;
+  width: 100%;
+  max-width: 15rem;
+  background-color: white;
+  }	
+.message {
+	text-align: center;
+	font-size: 2em;
+}
+ 
+ .img {
+	 display:block;
+	 margin: auto;
+     width:96%;
+	  
+ }
+ .button {
+	 font-size:1.5em;
+	 border-radius: 10px;
+	 padding:10px;
+	 margin: 10px;
+	 background-color: #2b2d42;
+	 color:white;
+	 
+ }
+ .button:hover {
+	 background-color: #d71414;
+	 color: #e5e5e5;
+ }
+ 
+footer  p {
+	color: #242f40;
+	text-align:center;
+	font-size: 1.2em;
+}
+ 
+
+}
+@media screen and (min-width: 831px){
+  *{
+    box-sizing: border-box;
+	
+  }
+   body {
+    margin: 0 auto;
+	 background-color: #2b2d42;
+    max-width: 80%;
+    
+   }
+    nav {
+       background-color: #d71414;
+	width:100%;
+	
+    }
+
+nav ul{
+        
+		display:block;
+		
+	     
+    }
+  nav ul li {
+   padding:5px;
+   list-style:none;
+}
+  nav ul li a{
+	text-decoration: none;
+	padding: 20px;
+	color: white;
+	font-size: 1.5em;
+	
+}
+nav ul li a:link {
+	color: #84c0c6;
+}
+nav ul li a:visited {
+	color: white;
+}
+nav ul li a:hover {
+	color: #14fcf0;
+}
+nav ul li a:active {
+	color: black;
+}
+nav img {
+	
+	position:absolute;
+	margin-left: -0.3em;
+	top: 0.7%;
+}
+
+
+
+main {
+	background-color:#e5e5e5;
+	padding-top:80px;
+	padding-bottom:80px;
+}
+.container {
+	
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	text-align: center;
+	    	
+}
+
+
+.container-p {
+
+  display: flex;
+  margin: 50px;
+
+    
+}
+ div .text {
+  display: block;
+  margin: auto;
+  width:96%;
+  padding-top:10px;
+ }
+ .container-p div>p {
+    margin:15px;
+}
+
+
+.item  {
+	text-align:center;
+	justify-content:center;
+}
+.item figure img {
+	
+	
+	width:100%;
+	
+}
+.item figure figcaption {
+	font-size:1.5em;
+	font-weight:bold;
+	color:black;
+	padding:10px;
+	
+}
+
+ form label.app, form div {
+  display: block;
+  padding-top: 1rem;
+  color: #9c2c13;
+  font-size: .8rem;
+  }
+  form label.app input, form label.app select {
+  
+  display: block;
+  font-size: 1rem;
+  border: solid 1px #758;
+  border-radius: 5px;
+  padding: .50rem;
+  color: black;
+  width: 100%;
+  max-width: 15rem;
+  background-color: white;
+  }	
+.message {
+	text-align: center;
+	font-size: 2em;
+}
+ 
+ .img {
+	 display:block;
+	 margin: auto;
+	 
+	  
+ }
+ .button {
+	 font-size:1.5em;
+	 border-radius: 10px;
+	 padding:10px;
+	 margin: 10px;
+	 background-color: #2b2d42;
+	 color:white;
+	 
+ }
+ .button:hover {
+	 background-color: #d71414;
+	 color: #e5e5e5;
+ }
+ 
+footer  p {
+	color: #242f40;
+	text-align:center;
+	font-size: 1.2em;
+}
+ 
+ }  
+
+
+@media screen and (min-width: 1061px){
+*{
+	box-sizing: border-box;
+}
+body {
+ margin: 0 auto;
+ width: 80%;
+ background-color: #2b2d42;
+
+}
+nav {
+	background-color: #d71414;
+	width:100%;
+	
+}
+nav ul {
+	display: flex;
+	padding: 30px;
+	justify-content: center;
+	align-items:center;
+        
+}
+nav ul li {
+	list-style:none;
+	
+}
+
+nav ul li a{
+	text-decoration: none;
+	padding: 20px;
+	color: white;
+	font-size: 1.5em;
+	
+}
+nav ul li a:link {
+	color: #84c0c6;
+}
+nav ul li a:visited {
+	color: white;
+}
+nav ul li a:hover {
+	color: #14fcf0;
+}
+nav ul li a:active {
+	color: black;
+}
+nav img {
+	
+	position:absolute;
+	margin-left: 0em;
+	top: 0.7%;
+}
+
+
+
+main {
+	background-color:#e5e5e5;
+	padding-top:80px;
+	padding-bottom:80px;
+}
+.container {
+	
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-gap: 20px;
+    	
+}
+
+.container-p {
+
+  display: flex;
+  margin: 50px;
+
+    
+}
+ .container-p div>p {
+    margin:15px;
+}
+div .text {
+  display: block;
+  margin: auto;
+  width:96%;
+  padding-top:10px;
+ }
+
+.item  {
+	text-align:center;
+	justify-content:center;
+}
+.item figure img {
+	
+	
+	width:80%;
+	
+}
+.item figure figcaption {
+	font-size:1.5em;
+	font-weight:bold;
+	color:black;
+	padding:10px;
+	
+}
+
+ form label.app, form div {
+  display: block;
+  padding-top: 1rem;
+  color: #9c2c13;
+  font-size: .8rem;
+  }
+  form label.app input, form label.app select {
+ 
+  display: block;
+  font-size: 1rem;
+  border: solid 1px #758;
+  border-radius: 5px;
+  padding: .50rem;
+  color: black;
+  width: 100%;
+  max-width: 15rem;
+  background-color: white;
+  }	
+.message {
+	text-align: center;
+	font-size: 2em;
+}
+ 
+ .img {
+	 display:block;
+	 margin: auto;
+	  
+ }
+ .button {
+	 font-size:1.5em;
+	 border-radius: 10px;
+	 padding:10px;
+	 margin: 10px;
+	 background-color: #2b2d42;
+	 color:white;
+	 
+ }
+ .button:hover {
+	 background-color: #d71414;
+	 color: #e5e5e5;
+ }
+ 
+footer  p {
+	color: #242f40;
+	text-align:center;
+	font-size: 1.2em;
+}
+}
