@@ -1,6 +1,6 @@
 {
-  "first_name": "Alexander",
-  "last_name": "Calva",
-  "Age": 40
+  first_name: "Alexander",
+  last_name: "Calva",
+  Age: 40
 
 }
