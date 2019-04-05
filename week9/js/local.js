@@ -13,7 +13,7 @@ window.addEventListener('load', function(){
 	
 */
 	var text = document.querySelector("#in").value;
-	
+	alert(text);
 	localStorage.setItem("Text",text); // Set data in LocalStorage
 	
 	boton.addEventListener('click', function() {
